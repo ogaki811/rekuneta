@@ -1,0 +1,360 @@
+/*  COMMON  */
+*{
+	margin:0;
+	padding:0;
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+html{
+	height:100%;
+	width:100%;
+}
+body{
+	margin:0;
+	padding:0;
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	font-size:14px;
+	height:100%;
+	width:100%;
+	color:#333333;
+}
+p, a, td, li{
+	font-size:100%;
+	color:#333333;
+	line-height:130%;
+}
+img {
+	display:block;
+	width:100%;
+}
+a img {
+	border:none;
+}
+.clear{
+	float:none;
+	clear:both;
+}
+.clearfix:after{
+	content:".";
+	display:block;
+	height:0;
+	font-size:0;
+	clear:both;
+	visibility:hidden;
+}
+
+/*  HEADER  */
+header{
+	background:white;
+}
+header #video{
+	background:#eeeeee;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing:border-box;
+	padding:15px 10px;
+}
+header #video #iframeWrap{
+	padding-top:56.25%;
+	position:relative;
+	width:100%;
+}
+header #video iframe{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100% !important;
+	height:100% !important;
+}
+
+section{
+	background:url(img/section_bg.jpg) left top repeat;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing:border-box;
+	padding:0 10px 15px 10px;
+	border-top:solid 2px #e3dab8;
+}
+.mainLink{
+	background:#3c9fd2;
+	padding:16px 0 25px 0;
+	border-top:solid 2px #277ca8;
+}
+.mainLink .enquete img{
+	margin-bottom:5px;
+}
+
+/*  SERVICE  */
+
+#service{
+	margin-bottom:10px;
+	}
+
+#service article{
+	-webkit-border-radius:3px;
+    border-radius:3px;
+	background:white;
+	margin-bottom:10px;
+	padding-bottom:15px;
+}
+#service article:last-child{
+	margin-bottom:0;
+}
+#service article p{
+	padding:0 10px;
+	margin-top:10px;
+}
+#service article p small{
+	color:#7a7a7a;
+	font-size:85%;
+}
+#service article a{
+	color:#00334e;
+	font-weight:bold;
+	text-decoration:none;
+	border-bottom:solid 1px #00334e;
+}
+#service article p img{
+	width:5.5px;
+	display:inline;
+	margin-right:10px;
+}
+
+/*  CATEGORIES  */
+#categories{
+	padding-right:5.5px;
+	padding-left:8.5px;
+}
+#categories h2{
+	display:block;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing:border-box;
+	padding-right:2px;
+}
+#categories nav:after{
+	content:".";
+	display:block;
+	height:0;
+	font-size:0;
+	clear:both;
+	visibility:hidden;
+}
+#categories nav a{
+	display:block;
+	width:50%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing:border-box;
+	float:left;
+	padding-right:2px;
+	margin-bottom:2px;
+}
+
+/*  FAQ  */
+#faq{
+	padding:0;
+	border-top:solid 2px #05344d;
+}
+#faq dl{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing:border-box;
+	padding:10px 10px;
+}
+#faq dl.question{
+	background:#e9f1f4;
+}
+#faq dl.answer{
+	background:white;
+	padding-bottom:20px;
+}
+#faq dl:after{
+	content:".";
+	display:block;
+	height:0;
+	font-size:0;
+	clear:both;
+	visibility:hidden;
+}
+#faq dt{
+	display:block;
+	float:left;
+	width:10%;
+	max-width:100px;
+	color:#00334e;
+	font-weight:bold;
+	font-size:110%;
+	line-height:140%;
+}
+#faq .question dd{
+	font-weight:bold;
+}
+#faq dd{
+	display:block;
+	float:right;
+	width:90%;
+	color:#00334e;
+	font-size:110%;
+	line-height:140%;
+}
+#faq dd strong{
+	font-weight:bold;
+	color:#fd7e01;
+	font-size:110%;
+}
+#faq dd small{
+	font-size:85%;
+	color:#7a7a7a;
+}
+
+/*  INTERNET  */
+#internet article{
+	-webkit-border-radius:3px;
+    border-radius:3px;
+	background:white;
+	margin-bottom:10px;
+	padding-bottom:15px;
+	border-top:solid 4px #277ca8;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing:border-box;
+	padding:15px 10px 20px 10px;
+}
+#internet article:after{
+	content:".";
+	display:block;
+	height:0;
+	font-size:0;
+	clear:both;
+	visibility:hidden;
+}
+#internet article:last-child{
+	margin-bottom:0;
+}
+#internet article h3{
+	margin-bottom:10px;
+	font-size:120%;
+	line-height:140%;
+}
+#internet article p{
+	float:left;
+	width:65%;
+}
+#internet article img{
+	float:right;
+	width:30%;
+}
+
+/*  TOP BANNER  */
+#topBanner{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	-webkit-transition: opacity 0.4s ease-out;
+	-moz-transition: opacity 0.4s ease-out;
+	-o-transition: opacity 0.4s ease-out; 
+	transition: opacity 0.4s ease-out;
+}
+#topBanner.hide{
+	zoom: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	-moz-opacity: 0;
+	-khtml-opacity: 0;
+	opacity: 0;
+}
+#topBanner.show{
+	zoom: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
+}
+
+/*  POPUP  */
+#popup{
+	position:fixed;
+	top:0;
+	left:0;
+	background:rgba(0, 0, 0, 0.7);
+	width:100%;
+	height:100%;
+	display:none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing:border-box;
+	padding:12px 10px;
+}
+#popup .popInside{
+	background:white;
+	padding-bottom:5px;
+}
+#popup .popInside a{
+	padding:0 10px;
+	display:block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing:border-box;
+	margin-bottom:10px;
+}
+#popup .popInside p{
+	font-size:85%;
+	color:#555555;
+	padding:0 10px;
+}
+#popup .popInside a.closePop{
+	width:80%;
+	margin:10px auto;
+}
+
+
+
+/* CSS3 CROSS BROWSER FIX */
+.border-radius{
+	-webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+.box_shadow{
+	-webkit-box-shadow: 0px 0px 4px 0px #ffffff;
+	box-shadow: 0px 0px 4px 0px #ffffff;
+}
+.transition{
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out; 
+	transition: all 0.3s ease-out;
+}
+.box-sizing{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing:border-box;
+}
+.opacity{
+	zoom: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+}
+.text-size-adjust{
+	text-size-adjust:none;
+	-webkit-text-size-adjust: none;
+}
+
+
+@media screen and (min-width: 400px){
+	
+}
+@media screen and (min-width: 600px){
+	
+}
+
+
+
+
+
+

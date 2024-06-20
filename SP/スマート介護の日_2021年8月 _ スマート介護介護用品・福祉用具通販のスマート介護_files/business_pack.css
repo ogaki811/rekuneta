@@ -1,0 +1,62 @@
+.business_pack_attension {
+	color:red;
+	font-weight:bold;
+}
+
+.business_pack_product_name {
+	float:left;
+}
+
+.business_pack_product_name img {
+	width: 65px;
+}
+
+.business_pack_product_code {
+	float:left;
+	margin-left:0.5em;
+}
+
+.business_pack_product_cartarea {
+	position:relative;
+	height:60px;
+}
+
+.business_pack_product_cartarea input {
+	display: inline !important;
+	width: 80px !important;
+}
+
+.business_pack_product_quantity {
+	position:absolute;
+	right: 6em;
+}
+
+.business_pack_product_cartbtn {
+	position:absolute;
+	right:1em;
+}
+
+.business_pack_product_cartbtn img {
+	width:60px;
+}
+
+.business_pack_list {
+	position:relative;
+	bottom:4em;
+	right:4em;
+}
+
+.business_pack_table tr {
+    margin: 15px auto 20px auto;
+    border-bottom: 1px solid #C5C8C9;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.textCenter {
+	text-align : center;
+}
+.textRight {
+	text-align: right;
+}

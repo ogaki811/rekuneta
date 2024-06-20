@@ -1,0 +1,889 @@
+@charset "utf-8";
+/* ===================================================================
+CSS information
+file name  :mypage.css
+style info :マイページ
+=================================================================== */
+/* -----------------------------------------------
+MYページ汎用
+----------------------------------------------- */
+#mypagecolumn {
+    width: 100%;
+    padding-bottom: 35px;
+    background-color:#ffffff;
+}
+#mypagecolumn h2.title {
+    font-size: 18px;
+    border-bottom: #CCC solid 1px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    margin-bottom: 0!important;
+}
+h3.title_mypage {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    padding: 10px 10px 15px 25px;
+    background: url(../img/common/bg_tit_bar.png) 10px 12px no-repeat;
+    -webkit-box-shadow: 1px 5px 5px #E2E2E2;
+    -moz-box-shadow: 1px 5px 5px #E2E2E2;
+}
+/**イントロダクション*/
+#mypagecolumn .information {
+    font-size: 12px;
+    padding: 10px 10px 0 10px;
+    border-bottom: 0;
+    font-weight: normal;
+}
+#mypagecolumn .information p:first-child {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.listBox {
+    padding: 10px 10px 5px;
+/*    background: #F7F5F0;
+    border: #A9ABAD solid 1px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;*/
+    margin-bottom: 10px;
+}
+/*-----------------------------------------------
+MYページナビ
+----------------------------------------------- */
+#mypage_nav {
+    width: 100%;
+    background: #DAE0E5;
+    background: -moz-linear-gradient(center top, #FDFDFD 0%,#DAE0E5 90%,#DAE0E5 0%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FDFDFD),color-stop(0.9, #DAE0E5),color-stop(0, #DAE0E5));
+    margin-bottom: 15px;
+    -webkit-box-shadow: 1px 5px 5px #EEEEEE;
+    -moz-box-shadow: 1px 5px 5px #EEEEEE;
+}
+#mypage_nav ul {
+    width: auto;
+    clear: both;
+    margin: 0 auto;
+}
+#mypage_nav ul li {
+    float: left;
+    text-align: center;
+    border-left: #FFF solid 1px;
+    border-right: #CCC solid 1px;
+    border-bottom: #CCC solid 1px;
+    white-space: nowrap;
+}
+#mypage_nav ul li a {
+    color: #000;
+    padding: 9px 0 8px 0;
+    display: block;
+    text-shadow: 0px -1px 1px rgba(255,255,255,0.7);
+    background-color: #DAE0E5;
+    background: -moz-linear-gradient(center top, #EEF0F3 0%,#DAE0E5 90%,#DAE0E5 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #EEF0F3),color-stop(0.9, #DAE0E5),color-stop(1, #DAE0E5));
+}
+#mypage_nav ul li a:hover {
+    color: #FFF;
+    text-shadow: 0px -1px 1px rgba(0,0,0,0.5);
+    background: #5393c5;
+    background: -moz-linear-gradient(center top, #5393c5 10%,#80b6e2 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #5393c5),color-stop(1, #80b6e2));
+}
+#mypage_nav ul li.nav_refusal,
+#mypage_nav ul li.nav_change {
+    width: 49.7%;
+}
+#mypage_nav ul li.nav_history,
+#mypage_nav ul li.nav_favorite,
+#mypage_nav ul li.nav_delivadd {
+    width: 33%;
+}
+#mypage_nav li:first-child {
+    border-left: none;
+}
+#mypage_nav li:nth-child(3) {
+    border-top: #FFF solid 1px;
+    border-left: none;
+}
+#mypage_nav li:nth-child(4),
+#mypage_nav li:nth-child(5) {
+    border-top: #FFF solid 1px;
+}
+
+#mypage_nav li:last-child,
+#mypage_nav li:nth-child(2) {
+    border-right: none;
+}
+
+/* -----------------------------------------------
+購入履歴詳細
+----------------------------------------------- */
+#mypagecolumn .cartitemBox {
+    padding: 10px 0;
+}
+#mycontents_area .history_search {
+	margin:10px 10px 10px;
+}
+#mycontents_area .history_search dl{
+
+}
+#mycontents_area .history_search dt{
+	float:left;
+	width:25%;
+	font-weight:bold;
+    line-height: 1.0em;
+    margin-top: 6px;
+	height: 36px;
+}
+#mycontents_area .history_search dd{
+	margin-bottom:10px;
+	float:left;
+	width:70%;
+	/*height: 36px;*/
+	line-height: 2.5em;
+}
+#mycontents_area .history_search dt span{
+	font-weight:normal;
+	font-size:0.8em;
+}
+#mycontents_area .history_search dd select,
+.mycondition_area select {
+    border: 1px solid #d5d9db;
+}
+#mycontents_area .history_search input[type="text"] {
+    background: none repeat scroll 0 0 #f0f1f2;
+    border: 1px solid #d5d9db;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: block;
+    height: 36px;
+    padding: 0 45px 0 6px;
+    width: 100%;
+}
+
+#mycontents_area .history_search input.box100 {
+	float:left;
+	width:45%;
+}
+
+#historyBox {
+    padding: 10px 10px 5px;
+    background: #F7F5F0;
+    border: #A9ABAD solid 1px;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    margin-bottom: 10px;
+}
+#historyBox p {
+    font-size: 12px;
+    width: 70%;
+    display: inline;
+    float: left;
+}
+#historyBox .btn_reorder {
+    width: 5em;
+    float: right;
+    padding: 15px;
+    display: inline;
+    margin: 0;
+}
+#mypagecolumn .cartinContents div {
+    min-height: 65px;
+}
+
+#mypagecolumn .cartinContents ul li.result {
+    padding-top: 0!important;
+    padding-left: 1em;
+}
+
+#mycontents_area .small_button_cart {
+	padding:3px 7px;
+	border:1px solid #cccccc;
+	float:left;
+	margin:5px 10px 5px 0;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color:#00334E;
+	color:#ffffff;
+}
+
+#mycontents_area .arrowBox em.mL15 {
+	margin-left:15px;
+}
+
+#mycontents_area .arrowBox {
+	line-height:1.7em;
+}
+#mycontents_area .detail_table {
+	border:1px solid #cccccc;
+}
+#mycontents_area .detail_table th {
+	border:1px solid #cccccc;
+}
+#mycontents_area .detail_table tr {
+	border:1px solid #cccccc;
+}
+#mycontents_area .detail_table td {
+	border:1px solid #cccccc;
+}
+#mycontents_area .messageArea {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: #F5F5F5;
+    border: 1px solid #C5C8C9;
+}
+
+
+
+/*メール履歴詳細*/
+#news_area li {
+    padding: 10px;
+    display: block;
+    clear: both;
+    line-height: 1.3;
+    background-color: #FEFEFE;
+    background: -moz-linear-gradient(center top, #FEFEFE 0%,#eeeeee 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FEFEFE),color-stop(1, #eeeeee));
+    border-top: #FFF solid 1px;
+    border-bottom: #CCC solid 1px;
+}
+/* -----------------------------------------------
+お気に入り
+----------------------------------------------- */
+.favoriteBox {
+    padding: 10px;
+    border-bottom: #CCC solid 1px;
+    clear: both;
+    position: relative;
+}
+.favoriteBox:last-child {
+    border-bottom: none;
+}
+.favoriteBox .photoL {
+    width: 80px;
+}
+.favoriteContents {
+    width: 65%;
+    float: right;
+    display: block;
+    position: relative;
+}
+
+.favoriteContents h4 {
+    margin-right: 30px;
+}
+
+.favoriteContents .btn_delete {
+    padding: 1px;
+    right: 0;
+    float: right;
+    position: absolute;
+    top: 0;
+}
+
+#add_favorite_product_btn {
+    font-size: 12px;
+}
+
+/* -----------------------------------------------
+会員登録内容変更
+----------------------------------------------- */
+#mypagecolumn .thankstext {
+    padding: 15px 10px 10px 10px;
+}
+
+#mycontents_area .webuser_list {
+	margin:10px 0;
+	border-bottom:1px solid #cccccc;
+	line-height:1.5em;
+	padding-bottom:15px;
+}
+
+p.add_address {
+	margin:10px 0 20px;
+}
+#mycontents_area table {
+	margin-bottom:20px;
+	width:100%;
+}
+#mycontents_area table tr {
+	border-bottom:1px solid #cccccc;
+}
+#mycontents_area table th {
+	text-align:left;
+	padding:10px 0;
+}
+#mycontents_area table td {
+	padding-left:0.5em;
+}
+
+/*
+#mycontents_area table tr:nth-child(2n-1) {
+ background: #eee;
+}*/
+
+select.w20 {
+	width:20% !important;
+	float:left;
+}
+span.ymd {
+float:left;
+padding-top:14px;
+margin-right:5px;
+}
+
+
+/* -----------------------------------------------
+お届け先追加・変更
+----------------------------------------------- */
+#mypagecolumn .btn_area_top {
+    margin-top: 10px;
+}
+.delivBox {
+    padding: 10px 10px 5px 10px;
+    border-bottom: #CCC solid 1px;
+    clear: both;
+    position: relative;
+}
+
+.delivBox:last-child {
+    border-bottom: none;
+}
+
+/* -----------------------------------------------
+退会手続き
+----------------------------------------------- */
+.refusetxt {
+    padding: 15px 10px 10px 10px;
+}
+.refusetxt p:first-child {
+    margin-bottom: 10px;
+}
+.btn_refuse {
+    padding: 0;
+    margin: 20px auto 0 auto;
+}
+.btn_refuse li {
+    display: inline-block;
+    vertical-align: middle;
+}
+.btn_refuse a.btn,
+.btn_refuse input[type="submit"].btn {
+    font-size: 13px!important;
+    display: inline;
+}
+.btn_refuse li:first-child {
+    margin-right: 1em;
+}
+
+/* -----------------------------------------------
+マイページ　ナビ部分
+----------------------------------------------- */
+#mynavi_area {
+}
+#mynavi_area .mynavi_list .button_like {
+    background: linear-gradient(to bottom, #fdfdfe 0%, #f1f4f4 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px #e8e5e8;
+    color: #333333;
+    display: block;
+    font-size: 16px !important;
+	margin: 0 5px;
+    padding: 5px 0;
+    text-align: center;
+    text-decoration: none;
+    float: left;
+    width: 97%;
+}
+#mynavi_area .mynavi_list .button_like_s, .button_like_s:hover {
+    background: linear-gradient(to bottom, #003856 0%, #002e46 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background-color: #003856;
+    box-shadow: 0 0 1px 2px #003856;
+    color: white;
+}
+#mynavi_area .mynavi_list {
+	padding:10px;
+}
+
+#mynavi_area .mynavi_list li {
+	float:left;
+	width:50%;
+	display:inline-block;
+}
+#mynavi_area .point_announce {
+    background-color: #f7f7f7;
+    border: 1px solid #cccccc;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+/* -----------------------------------------------
+マイページ　マイカタログ
+----------------------------------------------- */
+
+#myFolder{
+	padding-bottom:40px;
+}
+#folderName{
+	width:100%;
+}
+#folderTable{
+	width:100%;
+	margin-bottom:10px;
+}
+#folderTable td,
+#myFolder a{
+	display:block;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing:border-box;
+	padding:15px 30px 15px 8px;
+	border-bottom:solid 1px #cccccc;
+	text-decoration:none;
+	color:#333333;
+	background:url("../img/common/news_arrow.png") right center / 19px auto no-repeat;
+}
+#myFolder a small{
+	margin-left:5px;
+}
+#folderEdit .nbResults,
+#myFolder .nbResults,
+#folders .nbResults{
+	display:block;
+	padding:15px 0;
+	text-align:center;
+}
+#folders .padding.results{
+	padding-top:0;
+	padding-bottom:0;
+}
+#folders select{
+	background-color:#f0f1f2;
+	background-image:url(img/select_arrow.png);
+	background-repeat:no-repeat;
+	background-position:right center;
+	background-size:20px auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing:border-box;
+	width:100%;
+	border:solid 1px #d5d9db;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+	display:block;
+    height: 36px;
+	padding:0 6px;
+	-webkit-appearance: none;
+	font-size:115%;
+}
+#folders article{
+	padding:20px 6px 0 6px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing:border-box;
+}
+#folders article:after{
+	content:".";
+	display:block;
+	height:0;
+	font-size:0;
+	clear:both;
+	visibility:hidden;
+}
+#folders article .prodImg{
+	display:block;
+	width:38%;
+	float:left;
+}
+#folders article .prodImg img{
+	display:block;
+	width:100%;
+	margin-bottom:10px;
+}
+#folders article .prodImg .button{
+	font-size:100%;
+	padding:4px 0;
+}
+#folders article dl{
+	width:58%;
+	float:right;
+}
+#folders article dd{
+	padding-bottom:5px;
+}
+#folders article dd:last-of-type{
+	padding-bottom:0;
+}
+#folders article dt{
+	font-weight:bold;
+}
+#folders article dt.normal{
+	font-size:100%;
+	font-weight:normal;
+	padding-bottom:5px;
+}
+#folders article dt a{
+	display:inline-block;
+	text-decoration:none;
+	border-bottom:solid 1px #5c9ac2;
+	color:#5c9ac2;
+	font-weight:bold;
+	font-size:130%;
+	line-height:110%;
+	margin-bottom:10px;
+}
+#folders article .specs{
+	padding-bottom:20px;
+	border-bottom:solid 1px #bfbfbf;
+}
+#folders article .specs:after{
+	content:".";
+	display:block;
+	height:0;
+	font-size:0;
+	clear:both;
+	visibility:hidden;
+}
+#folders .padding{
+	padding-top:20px;
+	padding-bottom:40px;
+}
+/*#folderEdit input,
+#folders input{
+	width:40%;
+	background:#e6e7e8;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+	border:solid 1px #d8d8d8;
+	padding:5px;
+	font-weight:bold;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing:border-box;
+}
+#folderEdit input{
+	width: 100%;
+}*/
+.folderChangeBg{
+	width:100%;
+	height:100%;
+	position:fixed;
+	left:0;
+	top:0;
+	background:rgba(0, 0, 0, 0.4);
+}
+.folderChange{
+	position:fixed;
+	top:50%;
+	width:100%;
+	max-width:640px;
+	margin:0 auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing:border-box;
+	padding:0 10px;
+}
+.folderChange .container{
+	background:white;
+	padding-bottom:10px;
+	padding:20px 12px;
+}
+.folderChange .container:after{
+	content:".";
+	display:block;
+	width:100%;
+	height:0;
+	font-size:0;
+	clear:both;
+	float:none;
+	visibility:hidden;
+}
+.folderChange .padding{
+	padding:20px 0 0 0;
+}
+.folderChange .eraseProd{
+	padding:6px 0;
+	font-size:110%;
+}
+.memoWriteBox{
+	margin-top:20px;
+	padding-top:10px;
+	border-top:solid 1px #bfbfbf;
+}
+.memoWriteBox label{
+	display:block;
+	margin-bottom:5px;
+}
+.memoWriteBox .container{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing:border-box;
+	position:relative;
+}
+.memoWriteBox:after{
+	content:".";
+	display:block;
+	height:0;
+	font-size:0;
+	clear:both;
+	visibility:hidden;
+}
+.memoWriteBox a{
+	display:block;
+	width:21px;
+	height:21px;
+	background:url(img/remove.png) left top / 21px 21px no-repeat;
+	color:white;
+    -webkit-border-radius:20px;
+    border-radius:20px;
+	top:50%;
+	margin-top:-11px;
+	right:10px;
+	text-decoration:none;
+	position:absolute;
+}
+.memoWriteBox input{
+	background:#f0f1f2;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing:border-box;
+	width:100%;
+	border:solid 1px #d5d9db;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+	display:block;
+    height: 36px;
+	padding:0 40px 0 6px;
+}
+
+.sortResults{
+	margin-bottom:8px;
+}
+
+.quantityInput{
+	margin-bottom:6px;
+	border-bottom:1px solid #cccccc;
+}
+.pageNavi{
+	text-align:center;
+}
+.pageNavi a{
+	display:inline-block !important;
+}
+#product_form_lump dd.quantityInput input {
+	width:40% !important;
+}
+
+
+/* -----------------------------------------------
+マイページ　注文履歴
+----------------------------------------------- */
+.history_search dd select.w30 {
+	width:25%;
+	float:left;
+	margin-bottom:10px;
+}
+.history_search dd .float_L {
+	float:left;
+	margin-bottom:10px;
+}
+#mycontents_area .listBox {
+	line-height:2.0em;
+}
+#mycontents_area .listBox em {
+	width:22%;
+	display:inline-block;
+}
+
+
+#prodBtns, #prodBtnsFixed{
+	background:#d4d7d9;
+	padding:14px 1% 20px 1%;
+}
+#prodBtnsFixed{
+	position:fixed;
+	top:0;
+	width:100%;
+	max-width:640px;
+	margin:0 auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing:border-box;
+	display:none;
+}
+#prodBtns:after, #prodBtnsFixed:after{
+	content:".";
+	display:block;
+	height:0;
+	font-size:0;
+	clear:both;
+	visibility:hidden;
+}
+#prodBtns input, #prodBtnsFixed input{
+	display:block;
+	float:left;
+	height:50px;
+	width:98%;
+	color:white;
+	font-weight:bold;
+	border:solid 2px white;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing:border-box;
+	-webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.27);
+	box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.27);
+	font-size:120%;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+	margin:0 0.75%;
+}
+#prodBtns input.addToCatalogBtn, #prodBtnsFixed input.addToCatalogBtn{
+	display:block;
+	float:none;
+	clear:both;
+	height:50px;
+	color:inherit;
+	font-weight:bold;
+	border:solid 2px white;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing:border-box;
+	-webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.27);
+	box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.27);
+	font-size:120%;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+	margin: 10px 0.9% 0 0.9%;
+    width: 97.45%;
+}
+#prodBtns input.addToCatalogBtn:before{
+	content:".";
+	display:block;
+	height:0;
+	font-size:0;
+	clear:both;
+	visibility:hidden;
+}
+#prodBtns input.addToCartBtn, #prodBtnsFixed input.addToCartBtn{
+	background: -webkit-linear-gradient(top, #ea9a3d 0%,#e5830f 100%);
+	background: -o-linear-gradient(top, #ea9a3d 0%,#e5830f 100%);
+	background: -ms-linear-gradient(top, #ea9a3d 0%,#e5830f 100%);
+	background: linear-gradient(to bottom, #ea9a3d 0%,#e5830f 100%);
+}
+#prodBtns input.checkStockBtn, #prodBtnsFixed input.checkStockBtn{
+	background: -webkit-linear-gradient(top, #aebc32 0%,#9bad02 100%);
+	background: -o-linear-gradient(top, #aebc32 0%,#9bad02 100%);
+	background: -ms-linear-gradient(top, #aebc32 0%,#9bad02 100%);
+	background: linear-gradient(to bottom, #aebc32 0%,#9bad02 100%);
+}
+#prodBtns input:hover, #prodBtnsFixed input:hover{
+	cursor:pointer;
+}
+
+.pageNav a{
+    border: 1px solid #00334E;
+    background-color:#00334E;
+    display: inline-block;
+    padding: 10px;
+    color:#ffffff;
+    font-weight:bold;
+    border-radius:5px;
+}
+.pageNav .pageNav_prev {
+	text-align:left;
+}
+.pageNav .pageNav_prev:before {
+	content: "＜";
+}
+
+.pageNav .pageNav_next {
+	text-align:right;
+	float:right;
+}
+.pageNav .pageNav_next:before {
+	content: "＞";
+	text-align:right;
+	float:right;
+	
+}
+
+
+/* -----------------------------------------------
+販売店ログイン
+----------------------------------------------- */
+.customer_search {
+	margin:15px 0;
+}
+.customer_search em span {
+	font-weight:normal;
+	float:none;
+}
+.customer_search em:before {
+	clear:both;
+	margin-top:10px;
+}
+.customer_search span {
+	float:left;
+	margin-top: 16px;
+}
+
+.tab_like {
+    background: linear-gradient(to bottom, #fdfdfe 0%, #f1f4f4 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-radius: 10px 10px 0px 0px / 10px 10px 0px 0px;
+    box-shadow: 0 0 1px 2px #e8e5e8;
+    color: #333333;
+    display: block;
+    font-size: 10px !important;
+    margin: 0 5px;
+    padding: 5px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 105px;
+}
+.tab_like a{
+    font-size: 10px;
+}
+.tab_like_s, .tab_like_s:hover {
+    background: linear-gradient(to bottom, #ff7f50 0%, #F47E23 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background-color: #ff7f50;
+    box-shadow: 0 0 1px 2px #ff7f50;
+    color: white;
+}
+
+.month_list_base{
+    align-content: center;
+    width: 100%;
+    padding-left: 0;
+    margin: auto;
+    display: inline-block;
+    text-align: center;
+}
+
+.month_list.button_like{
+    padding: 5px;
+    width: 50px;
+    margin-right: 20px;
+    -moz-box-shadow: 0px 0px 1px 2px #ff7f50;
+    -webkit-box-shadow: 0px 0px 1px 2px #ff7f50;
+    box-shadow: 0px 0px 1px 2px #ff7f50;
+    color: white;
+
+    background: #003856;
+    background: -moz-linear-gradient(top,  #ff7f50 0%, #F47E23 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff7f50), color-stop(100%,#F47E23));
+    background: -webkit-linear-gradient(top,  #ff7f50 0%,#F47E23 100%);
+    background: -o-linear-gradient(top,  #ff7f50 0%,#F47E23 100%);
+    background: -ms-linear-gradient(top,  #ff7f50 0%,#F47E23 100%);
+    background: linear-gradient(to bottom,  #ff7f50 0%,#F47E23 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003856', endColorstr='#002e46',GradientType=0 );
+}
+
+
+
+
+

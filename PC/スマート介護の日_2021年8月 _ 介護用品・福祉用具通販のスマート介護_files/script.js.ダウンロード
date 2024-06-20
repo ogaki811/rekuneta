@@ -1,0 +1,225 @@
+
+$(document).ready(function (){
+	var lightBoxHeight = $('.light_box').height();
+	var lightBoxWidth = $('.light_box').width();
+	if(lightBoxWidth){
+		$('.light_box_bg').hide();
+		lightBoxHeight = lightBoxHeight/ '2';
+		lightBoxWidth = lightBoxWidth/ '2';
+		$('.light_box').css({"margin-left" : "-" + lightBoxWidth + "px", "margin-top" : "-" + lightBoxHeight + "px"});
+	}
+
+
+	$(window).resize(function(){
+		var lightBoxHeight = $('.light_box').height();
+		var lightBoxWidth = $('.light_box').width();
+		if(lightBoxWidth){
+			lightBoxHeight = lightBoxHeight/ '2';
+			lightBoxWidth = lightBoxWidth/ '2';
+			$('.light_box').css({"margin-left" : "-" + lightBoxWidth + "px", "margin-top" : "-" + lightBoxHeight + "px"});
+		}
+	});
+
+
+
+	$('.light_box_open').submit(function(event){
+		event.preventDefault();
+		$('.light_box_bg').show();
+		var productId = $("[name='product_id']").val();
+		var productName = $("[name='product_name']").val();
+		var productColor = $("[name='product_color']").val();
+		var productSize = $("[name='product_size']").val();
+		var productNumber = $("[name='nb_prods']").val();
+		$("[name='prd_id']").val(productId);
+		$("[name='prd_name']").val(productName);
+		$("[name='prd_color']").val(productColor);
+		$("[name='prd_size']").val(productSize);
+		$("[name='prd_number']").val(productNumber);
+		$('.prd_name').html(productName);
+		$('.prd_color').html(productColor);
+		$('.prd_size').html(productSize);
+		$('.prd_number').html(productNumber);
+		return false;
+	});
+
+	$('.simple_light_box_open').click(function(){
+		$('.light_box_bg').show();
+		return false;
+	});
+
+	$('.close_light_box').click(function(){
+		$('.light_box_bg').hide();
+	});
+
+	$('.light_box_bg').click(function(){
+		$(this).hide();
+	});
+
+
+
+	var topNavHeight = $('#top_navigation').height();
+	$('#top_navigation ul li ul').css({'top' : topNavHeight});
+
+	$(window).resize(function(){
+		var topNavHeight = $('#top_navigation').height();
+		$('#top_navigation ul li ul').css({'top' : topNavHeight});
+	});
+
+
+	$('#top_navigation ul li a').mouseenter(function(){
+		var image = $(this).find("img").attr('src');
+		if(image){
+			image = image.substring(0, image.length - 4);
+			image = image + '_ov.png';
+			$(this).find("img").attr({src: image});
+		}
+	});
+
+
+	$('#top_navigation ul li a').mouseleave(function(){
+		var image = $(this).find("img").attr('src');
+		if(image){
+			image = image.substring(0, image.length - 7);
+			image = image + '.png';
+			$(this).find("img").attr({src: image});
+		}
+	});
+
+
+	$('#top_navigation ul li ul li a').mouseenter(function(){
+		return false;
+	});
+
+
+	$('#top_navigation ul li ul li').mouseleave(function(){
+		return false;
+	});
+
+
+	$('#list_products_menu a').click(function(){
+		$('#list_products_menu a').removeClass();
+		$(this).addClass('current');
+		$('.list_products_box').hide();
+		var imageShowId = $(this).attr('id');
+		$('#list_products' + imageShowId.substr(imageShowId.length - 2)).show();
+		var tailleBox = $('#list_products' + imageShowId.substr(imageShowId.length - 2)).height();
+		$('#list_products_contents').animate({'height':tailleBox}, 200);
+		return false;
+	});
+
+
+	$('.product_main_img img').css({opacity: "0"});
+	$('.main_img01').css({opacity: "1"});
+
+	$('.product_select_img a').hover(function(){
+		$('.product_main_img img').clearQueue().stop().animate({opacity: "0"}, 200);
+		var imageClass = $(this).attr('class');
+		$('.main_img' + imageClass.substr(imageClass.length - 2)).clearQueue().stop().css({opacity: "1"});
+		var img_src = $('.main_img' + imageClass.substr(imageClass.length - 2)).attr('src');
+		$('#main_img_expansion').attr('href', img_src);
+		return false;
+	});
+
+	$('.product_select_img a').click(function(){
+		return false;
+	});
+
+	var tailleBox = $('#list_products01').height();
+	$('#list_products_contents').height(tailleBox);
+
+	setTimeout(function(){
+		var tailleSubSlider = $('.caroufredsel_wrapper ul li').height();
+		$('.caroufredsel_wrapper').height(tailleSubSlider);
+	},50);
+
+	$('.page_top').click(function(){
+		$("html,body").animate({scrollTop:0},500);
+		return false;
+	});
+
+
+	$('.answer_text').each(function(){
+		var answer_text_size = $(this).height();
+		$(this).css({'margin-top':'-'+answer_text_size+'px'});
+	});
+
+	$('.product_faq .open_answer').click(function(){
+		var answer_text_size = $(this).parent('tr').next('tr').find('.answer_text').height();
+		var answerMarginTop = $(this).parent('tr').next('tr').find('.answer_text').css('margin-top');
+
+
+		if(answerMarginTop == '0px'){
+			$(this).parent('tr').next('tr').find('.answer_text').animate({'margin-top':'-'+answer_text_size+'px'}, 200);
+			$(this).parent('tr').next('tr').find('.answer_text').css({'border-bottom':'none'});
+			$(this).parent('tr').next('tr').find('.answer_text').animate({'padding-top':'0', 'padding-bottom':'0'}, 0);
+		}
+
+
+		else{
+			$(this).parent('tr').next('tr').find('.answer_text').animate({'margin-top':'0px'}, 200);
+			$(this).parent('tr').next('tr').find('.answer_text').css({'padding-top':'10px', 'padding-bottom':'8px', 'border-bottom':'dotted 1px #767676'});
+		}
+	});
+
+	setTimeout(function(){
+		$('.caroufredsel_wrapper').height(294);
+	},50);
+
+    $(function() {
+        $("#myCatalogDialog").dialog({
+            modal: true,
+            autoOpen: false,
+            buttons: {
+                '閉じる': function(){
+                    $("#myCatalogDialog").children().remove();
+                    $(this).dialog('close');
+                }
+            },
+            open: function(){
+                $("#myCatalogDialog").load(
+                    $(this).dialog("option", "url")
+                    , null
+                    , function() {
+                        $("#myCatalogDialogLoading").hide();
+                    }
+                );
+            }
+        });
+        $(".myCatalogDialogOpen").click(function(){
+            $("#myCatalogDialogLoading").show();
+            $("#myCatalogDialog").dialog("option", "url", "/mypage/favorite_edit.php?product_id=" + $(this).attr('product_id'));
+            $("#myCatalogDialog").dialog("option", "width", "auto");
+            $("#myCatalogDialog").dialog('open');
+        });
+    });
+
+	$("#slides").carouFredSel({
+		width: 1194,
+		height: 240,
+		items: {
+			visible: 3,
+			width: 720,
+			height: 230,
+			start: -1,
+		},
+		scroll: {
+			items: 1,
+			pauseOnHover: false,
+		},
+		auto: {
+			timeoutDuration: 5000,
+			delay: 5000,
+		},
+		prev: '#prev',
+		next: '#next',
+		pagination: {
+			container : "#carousel_pager",
+			deviation: 1
+		},
+		swipe:{
+			duration: 5000,
+		}
+	});
+	$("#carousel_pager>a>span").text("");
+
+});

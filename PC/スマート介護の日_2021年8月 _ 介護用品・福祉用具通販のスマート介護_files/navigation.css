@@ -1,0 +1,39 @@
+/* --------------------------------------------
+ *                   headerNavi
+ * -------------------------------------------- */
+
+.headerNavi01 , .headerNavi02 , .headerNavi03 {
+	float: left;
+	width: 130px;
+	height: 33px;
+	margin: 11px 5px 0px 0px;
+}
+.headerNavi01 img , .headerNavi02 img , .headerNavi03 img {
+	border: 0;
+}
+.headerNavi01 a , .headerNavi02 a , .headerNavi03 a {
+	display: block;
+	width: 130px;
+	height: 33px;
+}
+.headerNavi01 a:hover , .headerNavi02 a:hover , .headerNavi03 a:hover {
+	background-color: transparent;
+}
+.headerNavi01 a:hover img , .headerNavi02 a:hover img , .headerNavi03 a:hover img{
+	visibility: hidden;
+}
+
+.headerNavi01 {
+	background: url(../img/common/header_navi01_on.jpg) no-repeat;
+}
+.headerNavi02 {
+	background: url(../img/common/header_navi02_on.jpg) no-repeat;
+}
+.headerNavi03 {
+	background: url(../img/common/header_navi03_on.jpg) no-repeat;
+}
+
+.condition-toggle-label {
+	float: right;
+	margin-right: 6px;
+}

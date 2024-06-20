@@ -1,0 +1,164 @@
+#login.ecrenkei img {
+  height: auto;
+  max-width: 100%;
+}
+#login.ecrenkei a {
+  color: #006398;
+}
+#login.ecrenkei a[target="_blank"]:after {
+  content: '';
+  background: url("../img/ec_renkei/link_blank.gif") no-repeat 0 0;
+  display: inline-block;
+  height: 12px;
+  margin: 0 0 0 5px;
+  padding: 0;
+  vertical-align: middle;
+  width: 13px;
+}
+#login.ecrenkei .ecrenkei-title {
+  border: none;
+  margin: 0 0 40px 0;
+  padding: 0;
+}
+#login.ecrenkei .ecrenkei-description {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+#login.ecrenkei .ecrenkei-utility {
+  border: none;
+  font-size: 0;
+  margin: 20px 0 0;
+  padding: 0;
+  text-align: right;
+}
+#login.ecrenkei .ecrenkei-utility .ecrenkei-utility-item {
+  display: inline-block;
+  border: none;
+  font-size: 14px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+}
+#login.ecrenkei .ecrenkei-utility .ecrenkei-utility-item + .ecrenkei-utility-item {
+  border-left: 1px solid #cccccc;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+#login.ecrenkei .ecrenkei-utility .ecrenkei-utility-item a {
+  text-decoration: underline;
+}
+#login.ecrenkei .ecrenkei-attention-wrap {
+  border: 1px solid #cccccc;
+  margin: 20px 0 0;
+  padding: 20px;
+}
+#login.ecrenkei .ecrenkei-attention-headline {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+#login.ecrenkei .ecrenkei-attention-text {
+  font-size: 14px;
+  margin: 20px 0 0;
+  padding: 0;
+}
+#login.ecrenkei .ecrenkei-attention-time {
+  border-left: 1px solid #cccccc;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+#login.ecrenkei .ecrenkei-attention-list {
+  border: none;
+  margin: 10px 0 0;
+  padding: 0;
+}
+#login.ecrenkei .ecrenkei-attention-list-item {
+  border: none;
+  font-size: 14px;
+  list-style: disc inside;
+  margin: 0 0 0 1.5em;
+  padding: 0;
+  text-indent: -1.5em;
+}
+#login.ecrenkei .ecrenkei-attention-list-item + .ecrenkei-attention-list-item {
+  margin-top: 5px;
+}
+#login.ecrenkei .ecrenkei-headline {
+  border-color: #333333 transparent transparent;
+  border-style: solid none none;
+  border-width: 5px 0 0 0;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 40px 0 40px;
+  padding: 20px 0 0;
+  text-align: left;
+}
+#login.ecrenkei .ecrenkei-headline:before {
+  display: none;
+}
+#login.ecrenkei .ecrenkei-subhead {
+  border: none;
+  margin: 40px 0;
+  padding: 0;
+  text-align: left;
+}
+#login.ecrenkei .ecrenkei-item {
+  border: none;
+  display: table;
+  margin: 0;
+  padding: 0;
+  border-spacing: 0;
+  width: 100%;
+}
+#login.ecrenkei .ecrenkei-item + .ecrenkei-item {
+  margin-top: 20px;
+}
+#login.ecrenkei .ecrenkei-item .ecrenkei-item-image,
+#login.ecrenkei .ecrenkei-item .ecrenkei-item-text-wrap {
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  vertical-align: top;
+}
+#login.ecrenkei .ecrenkei-item .ecrenkei-item-image {
+  width: 277px;
+}
+#login.ecrenkei .ecrenkei-item .ecrenkei-item-image a:after {
+  display: none;
+}
+#login.ecrenkei .ecrenkei-item .ecrenkei-item-text-wrap {
+  padding-left: 20px;
+}
+#login.ecrenkei .ecrenkei-item .ecrenkei-item-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+#login.ecrenkei .ecrenkei-item .ecrenkei-item-text,
+#login.ecrenkei .ecrenkei-item .ecrenkei-item-link {
+  font-size: 14px;
+  margin: 5px 0 0;
+  padding: 0;
+}
+#login.ecrenkei .ecrenkei-item .ecrenkei-item-link a {
+  text-decoration: underline;
+}
+#login.ecrenkei .ecrenkei-item .ecrenkei-item-link a:before {
+  content: '';
+  background: url("../img/ec_renkei/link_arrow.gif") no-repeat 0 0;
+  display: inline-block;
+  height: 8px;
+  margin: 0 5px 0 0;
+  padding: 0;
+  vertical-align: middle;
+  width: 7px;
+}
+

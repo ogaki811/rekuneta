@@ -1,0 +1,126 @@
+﻿@charset "utf-8";
+
+/************************************************
+ tables
+************************************************ */
+/* デフォルトテーブル
+----------------------------------------------- */
+table {
+    margin: 15px auto 20px auto;
+    border-top: 1px solid #C5C8C9;
+    border-left: 1px solid #C5C8C9;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+table th {
+    padding: 8px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+    background-color: #F0F1F2;
+    font-weight: normal;
+}
+table td {
+    padding: 8px;
+    border-right: 1px solid #C5C8C9;
+    border-bottom: 1px solid #C5C8C9;
+}
+
+table th.alignR
+table td.alignR {
+    text-align: right;
+}
+
+table th.alignL
+table td.alignL {
+    text-align: left;
+}
+
+table th.alignC
+table td.alignC {
+    text-align: center;
+}
+
+.converted_yellowcolor{
+    background-color: lightgoldenrodyellow;
+}
+
+/* 見出し
+----------------------------------------------- */
+div#undercolumn_shopping table th[scope=col] {
+    text-align: center;
+}
+div#undercolumn_shopping table.delivname th {
+    width: 155px;
+}
+
+/* MYページ */
+div#mycontents_area table th {
+    text-align: left;
+}
+div#mycontents_area table th.alignR, .alignR {
+    text-align: right !important;
+}
+div#mycontents_area table th.alignL, .alignL {
+    text-align: left;
+}
+div#mycontents_area table th.alignC, .alignC {
+    text-align: center;
+}
+div#mycontents_area table th.resulttd {
+    text-align: right;
+}
+div#mycontents_area table caption {
+    padding: 8px;
+    border-top: 1px solid #C5C8C9;
+    border-right: 1px solid #C5C8C9;
+    border-left: 1px solid #C5C8C9;
+    color: #000;
+    background-color: #F5F5F5;
+    text-align: left;
+    font-weight: bold;
+}
+div#mycontents_area table.search_table select {
+	margin-top:7px;
+}
+
+div#mycontents_area table.search_table th,
+div#mycontents_area table.search_table td {
+	padding:2px 8px;
+	font-size:100%;
+}
+div#mycontents_area table.detail_table {
+	margin:5px 0;
+}
+div#mycontents_area table.detail_table th {
+	text-align: center;
+}
+div#mycontents_area table.detail_table th,
+div#mycontents_area table.detail_table td {
+	padding:2px;
+	font-size:100%;
+}
+
+/* その他
+----------------------------------------------- */
+table select {
+    margin-bottom: 7px;
+    border: solid 1px #ccc;
+}
+
+/* マイページ　購入履歴
+----------------------------------------------- */
+
+table.mypage_history {
+	margin-top:20px!important;
+}
+
+table.mypage_history th {
+	text-align:left !important;
+	font-weight:bold;
+}
+
+table.dotted {
+    border-style: solid dotted;
+}

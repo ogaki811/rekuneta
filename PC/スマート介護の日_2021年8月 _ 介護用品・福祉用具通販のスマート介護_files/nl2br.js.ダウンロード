@@ -1,0 +1,30 @@
+(function($) {
+    $.extend({
+        nl2br: function nl2br(str) {
+            if(typeof str !== 'string') {
+                return str;
+            }
+            return str.replace(/[\n\r]/g, "<br />");
+        }
+    });
+})(jQuery);
+
+(function($) {
+    $.extend({
+        escape_html: function escape_html(string) {
+            if(typeof string !== 'string') {
+                return string;
+            }
+            return string.replace(/[&'`"<>]/g, function(match) {
+                return {
+                    '&': '&amp;',
+                    "'": '&#x27;',
+                    '`': '&#x60;',
+                    '"': '&quot;',
+                    '<': '&lt;',
+                    '>': '&gt;',
+                }[match]
+            });
+        }
+    });
+})(jQuery);
