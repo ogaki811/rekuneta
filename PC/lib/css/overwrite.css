@@ -1,0 +1,134 @@
+/* キーワード検索 */
+.srh_input input[type="text"],
+.srh_input input[type="number"]{
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #cccccc;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+}
+.srh_input input[type="text"]:disabled,
+.srh_input input[type="number"]:disabled{
+    color: #666!important;
+    border: 1px solid #EEE;
+    background-color: #DDD;
+}
+.srh_input input[type="text"]:disabled::placeholder,
+.srh_input input[type="number"]:disabled::placeholder{
+    color: #AAA!important;
+}
+.search_result_info{
+    width:100%;
+    display:flex;
+    align-items:center;
+    font-size:14px;
+    font-weight:normal;
+    padding: 0 0 1rem;
+}
+.search_result_research{
+    margin-left:auto;
+}
+
+/* デザインB適用 */
+.rec_search_tag{
+    display: flex;
+    gap: 2rem;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+.rec_search_wrap{
+    width: 100%;
+    background: url(https://d11w49g8ylcixs.cloudfront.net/upload/save_image/recneta/image/kensakuhaikei.png);
+    border: solid 2px #FFF0F4;
+    border-radius: 8px;
+    background-size: cover;
+    padding: 16px;
+}
+.rec_search_wrap:nth-child(1){
+    width: 50%;
+}
+h3.rec_search_title{
+    font-size: 1.25rem;
+    font-weight: normal;
+    padding: .5rem 0;
+    background-color: #ffffffad;
+    text-align: center;
+    font-weight: normal !important;
+    font-size: 1.25rem !important;
+}
+.srh_input{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    /* padding: 0 0 1.5rem; */
+    margin-bottom: 1.5rem;
+}
+.srh_input article.search_word_wrap{
+    width: 100%;
+}
+.srh_input article.search_txt_wrap{
+    width: 100%;
+}
+.srh_submit{
+    margin-top: auto;
+}
+
+
+.disabled * {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.clear-button {
+    margin-left: 10px;
+    display: none; /* 初期状態では非表示 */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0.25rem;
+    appearance: none;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    background-color: #EEE;
+    border-radius: 50%;
+}
+.clear-button svg{
+    width: 18px;
+    height: 18px;
+}
+.clear-button:hover {
+    background-color: #CCC;
+}
+/* #clearSearchText{
+    right: 2.5rem;
+} */
+.textid_st{
+    position: relative;
+}
+
+#clearSceneSearch{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: transparent;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    margin: 2rem auto 0;
+}
+
+/* ロゴ修正 */
+.mini_header .mini_header_div {
+    align-items: center;
+}
+.mini_header .mini_header_div .mini_logo {
+    margin-right: 1.5rem;
+}
